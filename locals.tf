@@ -1,8 +1,8 @@
 locals {
-  common_tags ={
-    Project = var.project
+  common_tags = {
+    Project     = var.project
     Environment = var.environment
-    Terraform = "true"
+    Terraform   = "true"
   }
-  az_zones = slice(data.aws_availability_zones.available.names, 0,2)
+  az_zones = slice(data.aws_availability_zones.available.names, 0, 2)
 }

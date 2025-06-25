@@ -14,6 +14,6 @@ output "private_subnet_ids" {
 }
 
 output "database_subnet_ids" {
-    value = aws_subnet.databse[*].id  # getting all cidrs
+    value = aws_subnet.database[*].id  # getting all cidrs
   
 }
